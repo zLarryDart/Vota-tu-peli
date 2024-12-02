@@ -16,6 +16,12 @@
 		3533F60D2CF18DAE001A9AB6 /* Vota_tu_peliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533F60C2CF18DAE001A9AB6 /* Vota_tu_peliTests.swift */; };
 		3533F6172CF18DAE001A9AB6 /* Vota_tu_peliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533F6162CF18DAE001A9AB6 /* Vota_tu_peliUITests.swift */; };
 		3533F6192CF18DAE001A9AB6 /* Vota_tu_peliUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3533F6182CF18DAE001A9AB6 /* Vota_tu_peliUITestsLaunchTests.swift */; };
+		35F35A2F2CF1A98800150401 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F35A2E2CF1A98800150401 /* Movie.swift */; };
+		35F35A312CF1A99C00150401 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F35A302CF1A99C00150401 /* MovieService.swift */; };
+		35F35A332CF1A9B100150401 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F35A322CF1A9B100150401 /* MovieListView.swift */; };
+		35F35A352CF1A9BE00150401 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F35A342CF1A9BE00150401 /* MovieDetailView.swift */; };
+		35F35A372CF1A9D200150401 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F35A362CF1A9D200150401 /* MovieListPresenter.swift */; };
+		35F35A3A2CF1BC8A00150401 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F35A392CF1BC8A00150401 /* NavigationBarModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		3533F6122CF18DAE001A9AB6 /* Vota tu peliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vota tu peliUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3533F6162CF18DAE001A9AB6 /* Vota_tu_peliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vota_tu_peliUITests.swift; sourceTree = "<group>"; };
 		3533F6182CF18DAE001A9AB6 /* Vota_tu_peliUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vota_tu_peliUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35F35A2E2CF1A98800150401 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		35F35A302CF1A99C00150401 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		35F35A322CF1A9B100150401 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		35F35A342CF1A9BE00150401 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		35F35A362CF1A9D200150401 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
+		35F35A392CF1BC8A00150401 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,13 @@
 		3533F5F42CF18DAB001A9AB6 /* Vota tu peli */ = {
 			isa = PBXGroup;
 			children = (
+				35F35A382CF1BC6600150401 /* Helpers */,
+				35F35A2D2CF1A96E00150401 /* Presenters */,
+				35F35A2C2CF1A93700150401 /* Views */,
+				35F35A2B2CF1A93100150401 /* Models */,
+				35F35A2A2CF1A92600150401 /* Services */,
 				3533F5F52CF18DAB001A9AB6 /* Vota_tu_peliApp.swift */,
 				3533F5F72CF18DAB001A9AB6 /* Persistence.swift */,
-				3533F5FC2CF18DAC001A9AB6 /* ContentView.swift */,
 				3533F5FE2CF18DAD001A9AB6 /* Assets.xcassets */,
 				3533F6002CF18DAD001A9AB6 /* Vota_tu_peli.entitlements */,
 				3533F5F92CF18DAC001A9AB6 /* Vota_tu_peli.xcdatamodeld */,
@@ -133,6 +149,48 @@
 				3533F6182CF18DAE001A9AB6 /* Vota_tu_peliUITestsLaunchTests.swift */,
 			);
 			path = "Vota tu peliUITests";
+			sourceTree = "<group>";
+		};
+		35F35A2A2CF1A92600150401 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				35F35A302CF1A99C00150401 /* MovieService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		35F35A2B2CF1A93100150401 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35F35A2E2CF1A98800150401 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35F35A2C2CF1A93700150401 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3533F5FC2CF18DAC001A9AB6 /* ContentView.swift */,
+				35F35A322CF1A9B100150401 /* MovieListView.swift */,
+				35F35A342CF1A9BE00150401 /* MovieDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35F35A2D2CF1A96E00150401 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				35F35A362CF1A9D200150401 /* MovieListPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		35F35A382CF1BC6600150401 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				35F35A392CF1BC8A00150401 /* NavigationBarModifier.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,10 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F35A3A2CF1BC8A00150401 /* NavigationBarModifier.swift in Sources */,
+				35F35A312CF1A99C00150401 /* MovieService.swift in Sources */,
+				35F35A372CF1A9D200150401 /* MovieListPresenter.swift in Sources */,
+				35F35A332CF1A9B100150401 /* MovieListView.swift in Sources */,
 				3533F5F62CF18DAB001A9AB6 /* Vota_tu_peliApp.swift in Sources */,
 				3533F5FB2CF18DAC001A9AB6 /* Vota_tu_peli.xcdatamodeld in Sources */,
 				3533F5FD2CF18DAC001A9AB6 /* ContentView.swift in Sources */,
 				3533F5F82CF18DAB001A9AB6 /* Persistence.swift in Sources */,
+				35F35A352CF1A9BE00150401 /* MovieDetailView.swift in Sources */,
+				35F35A2F2CF1A98800150401 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
